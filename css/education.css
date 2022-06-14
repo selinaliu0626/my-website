@@ -1,0 +1,33 @@
+
+div.headimg{
+    text-align: center;
+    width:90%;
+    height:500px;
+    background: url("../images/education.jpeg"),no-repeat;
+    background-size: contain;
+    overflow:hidden
+}
+img{
+    width:50%;
+    height:10%;
+}
+.edu{
+    text-align: center;
+    position: relative;
+    padding: 20px;
+}
+.school{
+    color: black;
+}
+
+
+ p{
+    font-family: 'Lobster', cursive;
+}
+aside{
+    font-family: 'Mukta', sans-serif;
+}
+/*header*/
+.eduheader{
+    font-family: 'Lobster', cursive;
+}

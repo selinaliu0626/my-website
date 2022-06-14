@@ -1,0 +1,74 @@
+
+
+
+h1 {
+    text-align: center;
+}
+
+.new {
+    display: flex;
+
+}
+
+.new-input {
+    display: block;
+    width: 100%;
+    padding: .5rem;
+    border: 0;
+    font-size: 1.2rem;
+
+}
+
+.new-button {
+    border: 0;
+    padding: 20px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: lightpink;
+    cursor: pointer;
+}
+
+
+ul, li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.item {
+    display: flex;
+    padding: 20px 10px;
+    background-color: white;
+}
+
+.item-check {
+    margin-right: 1em;
+}
+
+.item-text {
+    color: #708090;
+}
+
+.delete {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 12px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    width: 20px;
+    margin-left: auto;
+    padding: 0;
+    border: 0;
+    font-size: 0;
+}
+
+/* Darker background on mouse-over */
+.btn:hover {
+    background-color: lemonchiffon;
+}
+
+.item-check:checked + .item-text {
+    text-decoration: line-through;
+}

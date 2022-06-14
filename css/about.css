@@ -1,0 +1,55 @@
+
+#info{
+    font-family: "Monaco", monospace;
+}
+
+
+
+/*table*/
+table.gridtable {
+    font-family: verdana,arial,sans-serif;
+    font-size:11px;
+    color:#333333;
+    border-width: 1px;
+    border-color: #666666;
+    border-collapse: collapse;
+}
+section{
+    padding-left: 20px;
+}
+article{
+    padding-left: 20px;
+}
+
+table.gridtable th {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #dedede;}
+
+table.gridtable td {
+    border-width: 1px;
+    padding: 8px;
+    border-style: solid;
+    border-color: #666666;
+    background-color: #ffffff;}
+
+
+/*paragraph*/
+p.intro{
+
+    font-family: 'Mukta', sans-serif;
+    font-weight: bolder;
+}
+div.selfie{
+    width: 400px;
+    height: 500px;
+
+    border:1px solid black;
+}
+div.selfie img{
+    width: 100%;
+    height: 100%;
+}
+

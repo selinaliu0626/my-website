@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+</head>
+<body>
+<div id="app">
+    <img
+            :class="gender"
+            v-bind:src="picture"
+            :alt="`${firstName} ${lastName}`"
+    />
+    <h1>{{firstName}} {{lastName}}</h1>
+    <h3>Email:{{email}}</h3>
+    <button v-on:click="getUser()" :class="gender">Get Random User
+    </button>
+</div>
+<script src="https://unpkg.com/vue@3.0.5"></script>
+<script src="app.js"></script>
+</body>
+</html>

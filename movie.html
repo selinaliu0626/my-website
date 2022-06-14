@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <script src="https://kit.fontawesome.com/562d293021.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/movie.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Courgette&family=Lobster&family=Mukta:wght@200&family=Odibee+Sans&family=Open+Sans:ital,wght@0,400;1,300&family=Permanent+Marker&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <meta charset="UTF-8">
+    <title>Movie</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="one"></div>
+    <div class="two">
+        <div class="header">
+            <h1>My favourite movies</h1>
+        </div>
+        <nav>
+            <div class="menu">
+                <ul >
+                    <li><a href="HomePage.html" >HomePage</a></li>
+                    <li><a href="AboutMe.html" >AboutMe</a></li>
+                    <li><a href="photos.html" >Photos</a></li>
+                    <li><a href="Education.html" >Education</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="drum.html">Drum</a></li>
+                    <li><a href="movie.html">Movie</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+
+            <div id="app">
+                <div class="nav-bar"></div>
+                <button class="button" @click="likeIt">Like it!</button>
+                <div class="like">Like({{ like }})</div>
+                <display></display>
+            </div>
+
+
+        <footer>
+       <hr>
+        <h4>Contact Me</h4>
+        <ol id="footer-list">
+            <li> <i class="fa-solid fa-envelope"></i>  selinaliu0626@gmail.com</li>
+            <li><a href="https://www.linkedin.com/in/selina-liu-22bbb41b5/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/selinaliu0626/"> <i class="fa-brands fa-instagram"></i></a>
+                <i class="fa-brands fa-weixin"></i></li>
+        </ol>
+
+        <p>Copyright © 2022 SelinaLiu</p>
+
+        </footer>
+
+    </div>
+            <div class="three"></div>
+</div>
+<!-- Import App -->
+<script src="./movie.js"></script>
+
+<!-- Import Components -->
+<script src="components/display.js"></script>
+<script src="./components/ReviewForm.js"></script>
+<script src="./components/ReviewList.js"></script>
+
+<!-- Mount App -->
+<script>
+    const mountedApp = app.mount('#app')
+</script>
+</body>
+</html>

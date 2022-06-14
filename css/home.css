@@ -1,0 +1,55 @@
+.homelist {
+    text-align: center;
+}
+.homelist h1{
+    font-family: 'Lobster', cursive;
+    font-weight: bold;
+}
+
+#famphoto{
+    text-align: center;
+}
+
+/*list*/
+ol.firstpage{
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: large;
+    padding: inherit;
+}
+.firstpage li{
+    margin-top: 1em;
+}
+#greeting{
+    text-align: center;
+    border: calc(8px + 0.2vw) solid transparent;
+    box-sizing: border-box;
+    box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
+    border-radius: 30%;
+}
+
+/*form*/
+input[type=text] {
+    width: 60%;
+    padding: 10px 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+.btn{
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: cornflowerblue;
+    border-radius: 8px;
+
+}
+.showComment{
+    height: 6em;
+    background-color: #D6EAF8;
+}
