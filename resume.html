@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/resume.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Courgette&family=Lobster&family=Mukta:wght@200&family=Odibee+Sans&family=Open+Sans:ital,wght@0,400;1,300&family=Permanent+Marker&family=Raleway:wght@100&display=swap" rel="stylesheet">
+    <!-- Import Vue.js -->
+    <script src="https://unpkg.com/vue@3.0.11/dist/vue.global.js"></script>
+    <meta charset="UTF-8">
+    <title>Resume</title>
+
+</head>
+<body >
+<div class="wrapper">
+    <div class="one"></div>
+    <div class="two">
+        <div class="header">
+            <h1>Resume</h1>
+        </div>
+        <nav>
+            <div class="menu">
+                <ul >
+                    <li><a href="HomePage.html" >HomePage</a></li>
+                    <li><a href="AboutMe.html" >AboutMe</a></li>
+                    <li><a href="photos.html" >Photos</a></li>
+                    <li><a href="Education.html" >Education</a></li>
+                    <li><a href="travel.html">Travel</a></li>
+                    <li><a href="drum.html">Drum</a></li>
+                    <li><a href="movie.html">Movie</a></li>
+                </ul>
+            </div>
+        </nav>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+            <div id="app">
+                            <button class="w3-button w3-round-xxlarge w3-blue" v-on:click="toggle()">Resume</button>
+                <div class="resume" v-if="show">
+                <div class="row">
+                    <h1 style="text-align: center">{{fullName}}</h1>
+                <div class="column small">
+                    <img src="images/resume.JPG" alt="officalPhoto" width="250" height="400" >
+                </div>
+                <div class="column big">
+
+                    <p>{{city}} | Phone: {{phoneNumber}} |{{firstName}}06@bu.edu</p>
+                     <p><a href="https://github.com/selinaliu0626">GitHub: {{github}}</a>  </p>
+                    <h3>Education</h3>
+                        <ul>
+                       <li v-for="school in schools" :key="school.id">
+                           <p>{{school.name}}    </p>
+                           <small>{{school.attendTime}}</small>
+                           <p>{{school.major}}</p><br>
+                       </li>
+                      </ul>
+                        <br>
+                    <h3>Skills</h3>
+                    <table>
+                        <tr>
+                            <th>Languages</th>
+                            <td>Java</td>
+                            <td>C/C++</td>
+                            <td>JavaScript</td>
+                            <td>Python</td>
+                            <td>HTML/CSS</td>
+                        </tr>
+                        <tr>
+                            <th>FrameWork</th>
+                            <td>Spring</td>
+                            <td>SpringBoot</td>
+                            <td>Vue.js</td>
+                            <td>bootstrap</td>
+                            <td>express.js</td>
+                        </tr>
+                        <tr>
+                            <th>DateBase</th>
+                            <td>MySQL</td>
+                            <td>PostgreSQL</td>
+                        </tr>
+                    </table><br><br>
+            </div>
+
+        <div class="row p">
+            <h3>Projects</h3>
+            <h4>Shopping Store Online</h4>
+            <ul class="a">
+                <li>Implemented UI by Vue.js and referred to the style of Bootstrap to label different size of screen to let app dynamically adapt UI by the width of window or screen.
+                </li>
+                <li>Provided back-end RESTful API by Node.js and assigned router by Express.js
+                </li>
+                <li>Designed database by MongoDB to store, update, delete, and add information in Json format
+                </li>
+                <li>Realized goods rank function by price and lazy loading to save loading efficient and time
+                </li>
+            </ul><br>
+            <h4> Academic Management System</h4>
+            <ul class="a">
+                <li>Learned the practical implementation of the OOPs concepts of Java.</li>
+                <li>Implements the exception catch procedures.</li>
+                <li>File I/O as database system.</li>
+
+            </ul>
+        </div>
+        </div>
+            </div>
+                </div>
+
+                <footer>
+                    <hr>
+                    <h4>Contact Me</h4>
+                    <ol id="footer-list">
+                        <li> <i class="fa-solid fa-envelope"></i>  selinaliu0626@gmail.com</li>
+                        <li><a href="https://www.linkedin.com/in/selina-liu-22bbb41b5/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/selinaliu0626/"> <i class="fa-brands fa-instagram"></i></a>
+                            <i class="fa-brands fa-weixin"></i></li>
+                    </ol>
+
+                    <p>Copyright © 2022 SelinaLiu</p>
+
+                </footer>
+
+            </div>
+            <div class="three"></div>
+        </div>
+        <!-- Import App -->
+<script src="./resume.js"></script>
+    <script>
+        const monutedApp =app.mount('#app')
+    </script>
+
+
+</body>
+</html>
+
