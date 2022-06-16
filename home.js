@@ -14,12 +14,12 @@ function getTime() {
     if(day==="Saturday" || day==="Sunday"){
         document.getElementById("date").style.color= "purple";
         document.getElementById("info").innerHTML=weekends;
-        document.getElementById("info").style.color="#F15412";
+        document.getElementById("info").style.color="yellow";
 
     }else{
         document.getElementById("date").style.color= "darkblue";
         document.getElementById("info").innerHTML=weekday;
-        document.getElementById("date").style.color= "#827397";
+        document.getElementById("info").style.color= "grey";
     }
 }
 
