@@ -41,6 +41,9 @@ p.intro{
 
     font-family: 'Mukta', sans-serif;
     font-weight: bolder;
+       padding-left: 10%;
+    padding-right: 15%;
+    padding-bottom: 20px;
 }
 div.selfie{
     width: 400px;
