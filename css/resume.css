@@ -1,0 +1,73 @@
+
+/* Create 2 equal columns that floats next to each other */
+.column {
+    float: left;
+    padding: 5px;
+}
+.small{
+    width: 30%;
+}
+.big{
+    width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+    .column {
+        width: 100%;
+    }
+}
+h3{
+    text-decoration: underline;
+}
+.a{
+    line-height: 1.5;
+}
+img {
+    border-radius: 50%;
+    magin-right:0;
+}
+.p{
+    padding-left: 5%;
+    padding-right:5%;
+}
+small{
+    text-align: right;
+}
+table{
+    font-family: sans-serif;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+
+}
+th{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    color: #333;
+}
+
+/* rosy */
+.rosy {
+    color: #fae7e9;
+    border: solid 1px #b73948;
+    background: #da5867;
+    background: -webkit-gradient(linear, left top, left bottom, from(#f16c7c), to(#bf404f));
+    background: -moz-linear-gradient(top,  #f16c7c,  #bf404f);
+    filter:  progid:DXImageTransform.Microsoft.gradient(startColorstr='#f16c7c', endColorstr='#bf404f');
+}
+.rosy:hover {
+    background: #ba4b58;
+    background: -webkit-gradient(linear, left top, left bottom, from(#cf5d6a), to(#a53845));
+    background: -moz-linear-gradient(top, #cf5d6a, #a53845);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf5d6a', endColorstr='#a53845');
+}
