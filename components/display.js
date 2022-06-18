@@ -6,6 +6,19 @@ app.component('display', {
       <div class="show-image">
         <img v-bind:src="image">
       </div>
+   <div>
+     <p style="text-align: center; margin-left: 40%"> Hover to see more pictures</p>
+   </div>
+      <div
+          v-for="(variant, index) in variants"
+          :key="variant.id"
+          @mouseover="updateVariant(index)"
+          class="color-circle"
+          :style="{ backgroundColor: variant.color }">
+
+
+        <i class="fa-solid fa-angles-right">{{variant.id}}</i>
+      </div>
       <div class="info">
         <h1>{{ title }}</h1>
 
@@ -13,13 +26,6 @@ app.component('display', {
           <li v-for="detail in details">{{ detail }}</li>
         </ul>
 
-        <div 
-          v-for="(variant, index) in variants" 
-          :key="variant.id" 
-          @mouseover="updateVariant(index)" 
-          class="color-circle" 
-          :style="{ backgroundColor: variant.color }">
-        </div>
         
        
       </div>
