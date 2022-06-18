@@ -14,7 +14,7 @@ function getTime() {
     if(day==="Saturday" || day==="Sunday"){
         document.getElementById("date").style.color= "purple";
         document.getElementById("info").innerHTML=weekends;
-        document.getElementById("info").style.color="yellow";
+        document.getElementById("info").style.color="orange";
 
     }else{
         document.getElementById("date").style.color= "darkblue";
