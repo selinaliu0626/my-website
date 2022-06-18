@@ -49,19 +49,8 @@ ul, li {
     color: #708090;
 }
 
-.delete {
-    background-color: orange;
-    border: none;
-    color: white;
-    padding: 12px 16px;
-    font-size: 16px;
-    cursor: pointer;
-    float: right;
-    width: 20px;
-    margin-left: auto;
-    padding: 0;
-    border: 0;
-    font-size: 0;
+.delete{
+ margin-left: 90%;
 }
 
 /* Darker background on mouse-over */
